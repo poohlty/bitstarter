@@ -7,6 +7,8 @@
     <link type="text/css" rel="stylesheet" href="http://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link type="text/css" rel="stylesheet" href="http://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <link type="text/css" rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
 
     <style>
         @media (min-width: 980px){
@@ -44,9 +46,9 @@
             font-size: 24px;
             line-height: 30px;
         }
-        .container {
+        /*.container {
             width: 960px;
-        }
+        }*/
         p.lead {
             padding-top: 15px;
         }
@@ -198,16 +200,38 @@
                 <img src="http://placehold.it/480x300" class="img-polaroid">
             </div>
         </div>
-        <div class="row section2">
-            <div class="span12">
-                Marketing Section 2
+
+        <div class="row-fluid faq">
+            <div class="span10 offset1">
+                <h3>FAQ</h3>
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-deading">
+                            <a href="#collapseOne" data-toggle="collapse" data-parent="#accordion2" class="accordion-toggle">
+                                What does FAQ stand for?
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                Frequently Asked Question.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-deading"></div>
+                            <a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion2" class="accordion-toggle">
+                                What's a Freuqently Asked Question?
+                            </a>
+                        <div id="collapseTwo" class="accordion-body collpase">
+                            <div class="accordion-inner">
+                                A question which is commonly asked by users.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row faq">
-            <div class="span12">
-                FAQ
-            </div>
-        </div>
+
         <div class="row footer">
             <div class="span1">
                 Footer
